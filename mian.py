@@ -44,7 +44,7 @@ def update(root: tk.Tk, canvas: tk.Canvas):
 
     elapsed_ms = (time.perf_counter() - start) * 1000
 
-    print(f"{elapsed_ms:.2f} ms")
+    # print(f"{elapsed_ms:.2f} ms") # DEBUG
 
     delay = max(1, int(1000 / 60 - elapsed_ms))
     root.after(delay, update, root, canvas)
